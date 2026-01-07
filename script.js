@@ -272,6 +272,37 @@ function createCursorTrail() {
 // Uncomment below to enable cursor trail effect
 // createCursorTrail();
 
+// Copy Email Function
+function copyEmail() {
+    const email = 'piyalahmmed01@gmail.com';
+    const emailCard = document.querySelector('.email-card');
+    const copyHint = document.querySelector('.copy-hint');
+
+    // Copy to clipboard
+    navigator.clipboard.writeText(email).then(() => {
+        // Change the hint text
+        const originalText = copyHint.textContent;
+        copyHint.textContent = '✓ Copied!';
+        copyHint.style.color = '#00E278';
+
+        // Add success animation
+        emailCard.style.borderColor = '#00E278';
+
+        // Reset after 2 seconds
+        setTimeout(() => {
+            copyHint.textContent = originalText;
+            copyHint.style.color = '';
+            emailCard.style.borderColor = '';
+        }, 2000);
+    }).catch(err => {
+        console.error('Failed to copy email: ', err);
+        copyHint.textContent = '✗ Failed to copy';
+        setTimeout(() => {
+            copyHint.textContent = 'Click to copy';
+        }, 2000);
+    });
+}
+
 // Console Message
 console.log('%c🚀 Portfolio Website by MD Piyal Ahmmed', 'color: #00E278; font-size: 20px; font-weight: bold;');
 console.log('%c💼 Connect with me on LinkedIn or GitHub!', 'color: #0E5484; font-size: 14px;');
