@@ -779,29 +779,6 @@ section {
     font-size: 1rem;
 }
 
-/* Email Card Copy Hint */
-.copy-hint {
-    display: block;
-    margin-top: 0.5rem;
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    font-style: italic;
-    transition: var(--transition);
-}
-
-.email-card {
-    position: relative;
-}
-
-.email-card:hover .copy-hint {
-    color: var(--primary-color);
-}
-
-.email-text {
-    user-select: all;
-    cursor: pointer;
-}
-
 /* Footer */
 .footer {
     background: var(--bg-darker);
