@@ -1,0 +1,173 @@
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault}
+\usepackage{fontawesome}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{cvblue}\titlerule \vspace{-6pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\renewcommand\labelitemi{$\bullet$}
+\renewcommand\labelitemii{$\circ$}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-4pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{0pt}\item
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.5in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+
+% Document starts here
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\huge \textbf{MD Piyal Ahmmed}} \\[2pt] 
+    \vspace{1em}
+    \faPhone\ {(+88) 01880288682} ~ 
+    | ~
+    \faEnvelope\ \href{mailto:piyalahmmed01@gmail.com}{\color{blue}\textbf{piyalahmmed01@gmail.com}} ~ 
+    | ~
+    \faLinkedin\ \href{https://www.linkedin.com/in/md-piyal-ahmmed-bb1033205/}{\color{blue}\textbf{MD Piyal Ahmmed}} ~
+    | ~
+    \faGithub\ \href{https://github.com/piyal21}{\color{blue}\textbf{Piyal}} ~
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\vspace{4pt}
+\section{\color{cvblue}\faGraduationCap~ EDUCATION}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Ahsanullah University of Science and Technology}{Dhaka, Bangladesh}
+    {Bachelor of Science in Computer Science and Engineering}{2025}
+
+  % \resumeSubheading
+  %   {Birshreshtha Noor Mohammad Public College}{Dhaka, Bangladesh}
+  %   {Higher Secondary Certificate}{2019}
+\resumeSubHeadingListEnd
+
+
+%-----------WORKING EXPERIENCE-----------
+\section{\color{cvblue}\faBriefcase~ WORKING EXPERIENCE}
+
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Gigabit}{Dhaka, Bangladesh}
+    {Junior AI Engineer}{OCT 2025 -- Present}
+  \resumeItemListStart
+    \resumeItem{Developed and optimized machine learning pipelines for AI-driven automation and intelligent data processing.}
+   \resumeItem{Implemented Retrieval-Augmented Generation (RAG) systems integrating vector databases and LLMs for improved contextual accuracy in AI applications.}
+   
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------RESEARCH EXPERIENCE-----------
+\section{\color{cvblue}\faFlask~ RESEARCH EXPERIENCE}
+\resumeItemListStart
+  \resumeItem{\normalsize{\textbf{Gender Bias Mitigation for Bangla Classification Tasks} | \href{https://arxiv.org/html/2411.10636v1}{\color{blue}\underline{Link}}}}
+  \resumeItemListStart
+    \resumeItem{Developed four manually annotated datasets for sentiment analysis, toxicity detection, hate speech detection, and sarcasm detection in Bangla.}
+    \resumeItem{Used a gender-name swapping method to detect gender bias in pretrained models.}
+    \resumeItem{Evaluated on Bangla BERT-based models and achieved improved fairness without compromising accuracy.}
+  \resumeItemListEnd
+\resumeItemListEnd
+
+%-----------PROJECTS-----------
+\section{\color{cvblue}\faCode~ PROJECTS}
+\resumeItemListStart
+  \resumeItem{\normalsize{\textbf{AI-Powered Question Answering System} | \href{https://github.com/piyal21/10MS_ML_Assessment}{\color{blue}\underline{Link}}}}
+  \resumeItemListStart
+    \resumeItem{Developed an AI-driven question-answering tool using OpenAI embeddings and FAISS for fast, accurate semantic search over large datasets.}
+    \resumeItem{Integrated OpenAI GPT models to generate contextually relevant and precise answers based on vector search results.}
+    \resumeItem{Built an interactive UI with Streamlit for visualization.}
+
+  \resumeItemListEnd
+
+  \vspace{1em}
+
+  \resumeItem{\normalsize{\textbf{Intelligent Content Generator} | \href{https://github.com/piyal21/Gen-AI-Projects/tree/master}{\color{blue}\underline{Link}}}}
+  \resumeItemListStart
+    \resumeItem{Built an automated content generation tool mimicking LinkedIn influencers’ writing style using few-shot prompting.}
+    \resumeItem{Developed an interactive UI using Streamlit for selecting post topic, tone, and length with real-time preview.}
+    \resumeItem{Integrated OpenAI’s LLM backend to ensure high-quality, stylistically aligned post generation.}
+  \resumeItemListEnd
+\resumeItemListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{\color{cvblue}\faTools~ TECHNICAL SKILLS}
+\begin{multicols}{2}
+\resumeItemListStart
+  \resumeItem{\textbf{Programming Languages:} Python, C++, Java}
+  \resumeItem{\textbf{Libraries \& Frameworks:} PyTorch, TensorFlow, Scikit-learn, Pandas, NumPy, Transformers, LangChain, LangGraph, LangSmith}
+  \resumeItem{\textbf{Machine Learning Techniques:} Deep Learning, Artificial Neural Networks (ANN), Convolutional Neural Networks (CNN), Natural Language Processing (NLP), Prompt Engineering, Retrieval-Augmented Generation (RAG), Fine-tuning}
+  \resumeItem{\textbf{Databases:} MySQL, PostgreSQL}
+  \resumeItem{\textbf{API Development:} FastAPI, REST API}
+  \resumeItem{\textbf{Tools \& Platforms:} Git, Docker, MLflow, Jupyter Notebook}
+  \resumeItem{\textbf{Concepts:} Data Structures, Algorithms, Object-Oriented Programming (OOP), Data Preprocessing, Feature Engineering, Model Evaluation Metrics}
+\resumeItemListEnd
+\end{multicols}
+
+\end{document}
